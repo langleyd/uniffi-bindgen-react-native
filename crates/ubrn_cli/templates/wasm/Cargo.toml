@@ -27,7 +27,7 @@ default = []
 # uniffi-runtime-javascript crate.
 # cargo is smart enough to do this if we don't put any further restrictions
 # on it.
-uniffi-runtime-javascript = { version = "{{ runtime_version() }}", features = ["wasm32"] }
+uniffi-runtime-javascript = { git = "https://github.com/langleyd/uniffi-bindgen-react-native", branch = "bump_uniffi" features = ["wasm32"] }
 wasm-bindgen = "*"
 
 [profile.release]
